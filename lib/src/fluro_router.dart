@@ -318,6 +318,7 @@ class FluroRouter {
       routeSettings: routeSettings,
     );
     if(match.route == null || match.errorMessage.isNotEmpty){
+      print(match.errorMessage);
       return null;
     }
     return match.route;
