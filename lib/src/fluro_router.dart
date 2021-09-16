@@ -317,8 +317,7 @@ class FluroRouter {
       routeSettings.name,
       routeSettings: routeSettings,
     );
-    print(match.errorMessage);
-    if(match.route == null){
+    if(match.route == null || match.errorMessage.isNotEmpty){
       return null;
     }
     return match.route;
