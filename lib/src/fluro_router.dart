@@ -318,7 +318,7 @@ class FluroRouter {
       routeSettings: routeSettings,
     );
     if(match.route == null || match.errorMessage.isNotEmpty){
-      throw Exception('There is no route matching the path');
+      return null;
     }
     return match.route;
   }
